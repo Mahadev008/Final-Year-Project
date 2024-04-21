@@ -141,7 +141,7 @@ python-dotenv
 pytz
 streamlit
 streamlit-option-menu
-pywin32==301
+pywin32>=225,<=303
 pywin32-ctypes
 PyYAML
 pyzmq
