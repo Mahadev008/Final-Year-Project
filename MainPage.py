@@ -4,7 +4,7 @@ from InputPage_CSV import upload_csv
 from Emo_dashboard import emo_dashboard
 
 import os
-os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
+# os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
 
 
 ######################################## PAGE CONFIGURATION #####################################
