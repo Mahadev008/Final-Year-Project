@@ -139,7 +139,9 @@ PyPDF2
 python-dateutil
 python-dotenv
 pytz
-pywin32==302
+streamlit
+streamlit-option-menu
+pywin32
 pywin32-ctypes
 PyYAML
 pyzmq
@@ -164,8 +166,6 @@ SQLAlchemy
 sqlparse
 stack-data
 starlette
-streamlit
-streamlit-option-menu
 sympy
 tenacity
 tensorboard
