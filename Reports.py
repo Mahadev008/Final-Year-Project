@@ -78,7 +78,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 import base64
 import os
-os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
+# os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
 
 # Function to generate PDF report
 def generate_pdf_report(analyzed_data, count_plot_image, pie_chart_image, include_countplot,
