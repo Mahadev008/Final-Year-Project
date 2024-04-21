@@ -107,7 +107,10 @@ def get_youtube_comments(youtube_service, brand_name, max_results=7):
 
 # @st.cache_data
 def data_processing(text):
-    text = cleantext.clean(text, clean_all=False, extra_spaces=True, stopwords=True,
+    if not text or text.isspace():
+        return text
+    else:
+        text = cleantext.clean(text, clean_all=False, extra_spaces=True, stopwords=True,
                                lowercase=True, numbers=True, punct=True, stemming=True, )
     return text
 
