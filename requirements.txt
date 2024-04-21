@@ -139,7 +139,7 @@ PyPDF2
 python-dateutil
 python-dotenv
 pytz
-pywin32==304
+pywin32==303
 pywin32-ctypes
 PyYAML
 pyzmq
