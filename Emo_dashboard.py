@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 import Summary as s
 import Reports as r
 import os
-os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
+# os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
 
 
 ################################## EMOTION-DASHBOARD ########################################
