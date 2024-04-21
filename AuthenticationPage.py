@@ -3,7 +3,7 @@ import streamlit as st
 import firebase_admin
 from firebase_admin import firestore, credentials, auth, storage, db
 import os
-os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
+# os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
 
 if not firebase_admin._apps:
     cred = credentials.Certificate("streamlitsentimentapp-firebase-adminsdk-j5ali-11b8fc6f9e.json")
