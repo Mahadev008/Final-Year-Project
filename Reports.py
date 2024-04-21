@@ -1,75 +1,3 @@
-# import streamlit as st
-# from fpdf import FPDF
-# import base64
-#
-# def generate_pdf_report(analyzed_data, count_plot_image, pie_chart_image, include_countplot, include_piechart):
-#     # Create a new PDF object
-#     pdf = FPDF()
-#     pdf.add_page()
-#
-#     # Add title
-#     pdf.set_font("Arial", size=16)
-#     pdf.cell(200, 10, txt="Sentiment Analysis Report", ln=True, align="C")
-#     pdf.ln(10)
-#
-#     # Add data description
-#     pdf.set_font("Arial", size=12)
-#     pdf.cell(200, 10, txt="Data Description:", ln=True, align="L")
-#     pdf.ln(5)
-#     pdf.set_font("Arial", size=10)
-#     pdf.multi_cell(0, 10, txt=analyzed_data.head().to_string())
-#
-#     # Add count-plot to the first page if selected
-#     if include_countplot:
-#         pdf.add_page()
-#         # Add title to Countplot
-#         pdf.set_font("Arial", size=16)
-#         pdf.cell(200, 10, txt="COUNT-PLOT", ln=True, align="C")
-#         pdf.ln(5)
-#         # Add countplot SVG to the PDF
-#         if count_plot_image:
-#             pdf.image(count_plot_image, x=10, y=pdf.get_y() + 10, w=180)
-#             pdf.ln(80)
-#
-#     # Add pie-chart to the first page if selected
-#     if include_piechart:
-#         # if include_countplot:
-#         pdf.add_page()
-#         pdf.set_font("Arial", size=16)
-#         pdf.cell(200, 10, txt="PIE-CHART", ln=True, align="C")
-#         pdf.ln(10)
-#
-#         # Add pie chart to the second page
-#         if pie_chart_image:
-#             pdf.image(pie_chart_image, x=30, y=pdf.get_y() + 10, w=150)
-#             pdf.ln(80)
-#
-#     # Save the PDF file
-#     pdf_output_path = "sentiment_analysis_report.pdf"
-#     pdf.output(pdf_output_path)
-#
-#     return pdf_output_path
-#
-# def report_gen():
-#     st.write("Generate PDF Report:")
-#     analyzed_data = st.session_state.get('analyzed_data')
-#     count_plot_image = st.session_state.get('count_plot_image')
-#     pie_chart_image = st.session_state.get('pie_chart_image')
-#     include_countplot = st.checkbox("Include Count Plot")
-#     include_piechart = st.checkbox("Include Pie Chart")
-#     if analyzed_data is not None:
-#         if st.button("Generate Report"):
-#             pdf_output_path = generate_pdf_report(analyzed_data, count_plot_image, pie_chart_image, include_countplot, include_piechart)
-#             with open(pdf_output_path, "rb") as f:
-#                 pdf_bytes = f.read()
-#             # Download the PDF file
-#             b64 = base64.b64encode(pdf_bytes).decode()
-#             href = f'<a href="data:application/octet-stream;base64,{b64}" download="sentiment_analysis_report.pdf">Download PDF report</a>'
-#             st.markdown(href, unsafe_allow_html=True)
-#     else:
-#         st.write("No analyzed data found. Please analyze data first in the 'Summary' page.")
-
-
 import streamlit as st
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
@@ -89,7 +17,7 @@ def generate_pdf_report(analyzed_data, count_plot_image, pie_chart_image, includ
     pdf_filename = f"{brand_name}_analysis_report.pdf"
     pdf = canvas.Canvas(pdf_filename, pagesize=letter)
     width, _ = letter
-    pdfmetrics.registerFont(TTFont('Tahoma', 'Tahoma.ttf'))
+    pdfmetrics.registerFont(TTFont('tahoma-bold', 'tahoma-bold.ttf'))
     pdfmetrics.registerFont(TTFont('Segoe UI Emoji', 'seguiemj.ttf'))
 
     # Add title and data description on Page 1
@@ -121,7 +49,7 @@ def generate_pdf_report(analyzed_data, count_plot_image, pie_chart_image, includ
     center_x = width / 2 - title_width / 2
     pdf.drawString(center_x, 700, "Sentiment Analysis Report")
 
-    pdf.setFont("Tahoma", 40)
+    pdf.setFont("tahoma-bold", 40)
     brand_name_width = pdf.stringWidth(brand_name)
     center_x = width / 2 - brand_name_width / 2
     pdf.drawString(center_x, 450, brand_name)
