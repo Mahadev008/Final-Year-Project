@@ -11,7 +11,7 @@ from googleapiclient.discovery import build
 # import pyrebase
 import os
 
-os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
+# os.chdir("P:\PyCharm Selenium Practice\pythonProject\Sentiment Analysis\example app\TestingApp")
 
 # emotion = pipeline("sentiment-analysis", model="j-hartmann/emotion-english-distilroberta-base")
 
