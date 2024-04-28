@@ -1,25 +1,35 @@
+/* Override dark mode */
+.stApp {
+    color: black !important;
+    background-color: #f2f2f2 !important;
+}
+
 .stApp > header {
-    color: black;
-    background-color: transparent;
+    color: black !important;
+    background-color: transparent !important;
 }
 
 .stTextInput > div > div > div > div > input {
-        background-color: #e6f7ff !important;
+    background-color: #e6f7ff !important;
 }
 
+/* Gradient background */
 .stApp {
-    color: black;
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(to top right,  SkyBlue, White, rgb(38, 183, 236));
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+    background: linear-gradient(to top right,  SkyBlue, White, rgb(38, 183, 236)) !important;
+    animation: gradient 15s ease infinite !important;
+    background-size: 400% 400% !important;
+    background-attachment: fixed !important;
 }
 
-.stApp {
-    color: black;
-    background-color: #f2f2f2;
-    padding: 20px;
+/* Define the gradient animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
