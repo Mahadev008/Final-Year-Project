@@ -11,8 +11,8 @@ import cleantext
 from googleapiclient.discovery import build
 # import pyrebase
 from ExcelReport import convert_to_df
-import os
-os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
+# import os
+# os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
 
 # emotion = pipeline("sentiment-analysis", model="j-hartmann/emotion-english-distilroberta-base")
 
