@@ -3,8 +3,8 @@ from AuthenticationPage import authenticate
 from InputPage_CSV import upload_csv
 from Emo_dashboard import emo_dashboard
 
-import os
-os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
+# import os
+# os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
 
 
 ######################################## PAGE CONFIGURATION #####################################
