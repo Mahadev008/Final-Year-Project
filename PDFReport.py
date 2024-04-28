@@ -6,7 +6,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 import base64
 import os
-os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
+# os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
 
 # Function to generate PDF report
 def generate_pdf_report(analyzed_data, count_plot_image, linechart_image, pie_chart_image, include_countplot, include_linechart,
