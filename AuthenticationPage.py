@@ -3,7 +3,7 @@ import streamlit as st
 import firebase_admin
 from firebase_admin import firestore, credentials, auth, storage, db
 import os
-os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
+# os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
 
 
 if not firebase_admin._apps:
