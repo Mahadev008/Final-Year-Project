@@ -6,7 +6,7 @@ import BrandComparison as b
 import PDFReport as p
 import ExcelReport as e
 import os
-os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
+# os.chdir("C:\\Users\\Mahadevan Periasamy\\Desktop\\FinalYearProject_ML\\Streamlit\\Final_Project")
 
 ################################## EMOTION-DASHBOARD ########################################
 
