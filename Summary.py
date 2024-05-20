@@ -24,7 +24,7 @@ with gzip.open('trained_multilingual_emotion_model.pkl.gz', 'rb') as f:
     emotion = pickle.load(f)
 
 # Set up YouTube Data API credentials
-API_KEYS = ["AIzaSyCBtHdk65CyZP39arZo1qcDghRFtrzKqUM", "AIzaSyAd-2FR0xlWjCITRtm4Q__t7ja6zb95h_s", "AIzaSyD5dSk_A4D-JM5n4VVQcZFPlT4kysgV7ro", "AIzaSyAglY6VSV8I7HnHGpSJb69oOakFKMcBBOg"]
+API_KEYS = ["AIzaSyCBtHdk65CyZP39arZo1qcDghRFtrzKqUM", "AIzaSyAXjCHlwi5yYsme5FpYpnPSY29BF-XLg6U", "AIzaSyAd-2FR0xlWjCITRtm4Q__t7ja6zb95h_s", "AIzaSyD5dSk_A4D-JM5n4VVQcZFPlT4kysgV7ro", "AIzaSyAglY6VSV8I7HnHGpSJb69oOakFKMcBBOg"]
 
 def build_youtube_service(api_key):
     return build('youtube', 'v3', developerKey=api_key)
